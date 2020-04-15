@@ -70,12 +70,12 @@ public class RegisterTestCase extends TestBase {
         homePage.clickOnRegisterLink();
 
         //select Male gender radio button
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         registerPage.selectMaleGenderRadioButton();
 
         //select Female gender radio button
         //registerPage.selectFemaleGenderRadioButton();
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         //send text to First Name field
         registerPage.sendTextToFirstNameField(firstName);
 

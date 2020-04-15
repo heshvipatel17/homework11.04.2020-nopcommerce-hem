@@ -11,7 +11,8 @@ public class MyAccountPage extends Utility {
     //methods performing actions on elements
     public void verifyTextMyAccount(String str) {
         //explicit wait
-        waitUntilVisibilityOfElementLocated(myAccountText,10);
+        waitUntilPresenceOfElementLocated(myAccountText, 30);
+//        waitUntilVisibilityOfElementLocated(myAccountText,10);
         verifyTextAssertMethod(myAccountText, str);
     }
 

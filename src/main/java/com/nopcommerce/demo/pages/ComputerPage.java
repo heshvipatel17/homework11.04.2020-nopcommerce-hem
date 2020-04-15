@@ -11,12 +11,14 @@ public class ComputerPage extends Utility {
 
     //methods performing actions on elements
     public void verifyComputerPageText(String str) {
-        waitUntilElementToBeClickable(computerPageText, 20);
+        waitUntilPresenceOfElementLocated(computerPageText, 20);
+//        waitUntilElementToBeClickable(computerPageText, 20);
         verifyTextAssertMethod(computerPageText,str);
     }
 
     public void clickOnDesktopsLink() {
-        waitUntilElementToBeClickable(desktopsLink, 20);
+        waitUntilPresenceOfElementLocated(desktopsLink,20);
+//        waitUntilElementToBeClickable(desktopsLink, 20);
         clickOnElement(desktopsLink);
     }
 

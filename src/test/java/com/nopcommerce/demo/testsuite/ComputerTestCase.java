@@ -40,11 +40,11 @@ public class ComputerTestCase extends TestBase {
         //click the computer tab on HomePage
         homePage.clickOnComputerTab();
         //click the desktop link on ComputerPage
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         computerPage.clickOnDesktopsLink();
         //click on Build your own computer on DesktopPage
         desktopPage.clickOnBuildYourOwnComputer();
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         //select 400gb HDD radio button
         buildYourOwnComputerPage.clickOnHDD400GBRadioButton();
         //click on Add to cart button

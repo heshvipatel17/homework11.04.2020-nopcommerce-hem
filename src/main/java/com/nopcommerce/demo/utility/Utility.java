@@ -84,6 +84,11 @@ public class Utility extends BasePage {
         wait.until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+//    public void waitUntilPresenceOfElementLocated(WebElement element, int timeout) {
+//        WebDriverWait wait = new WebDriverWait(driver, timeout);
+//        wait.until(ExpectedConditions.presenceOfElementLocated(By. b));
+//
+
     /*
      * This method will used to wait web driver until visibility of element located by locator
      */

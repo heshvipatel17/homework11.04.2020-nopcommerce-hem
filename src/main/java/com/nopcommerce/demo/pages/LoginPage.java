@@ -19,12 +19,14 @@ public class LoginPage extends Utility {
 
     public void sendTextToEmailField(String str) {
         //explicit wait
-        waitUntilElementToBeClickable(emailField, 20);
+        waitUntilPresenceOfElementLocated(emailField, 20);
+//        waitUntilElementToBeClickable(emailField, 20);
         sendTextToElement(emailField, str);
     }
 
     public void sendTextToPasswordField(String str) {
-        waitUntilElementToBeClickable(passwordField, 20);
+        waitUntilPresenceOfElementLocated(passwordField, 20);
+//        waitUntilElementToBeClickable(passwordField, 20);
         sendTextToElement(passwordField, str);
     }
 

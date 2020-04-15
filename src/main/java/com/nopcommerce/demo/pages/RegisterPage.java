@@ -27,22 +27,26 @@ public class RegisterPage extends Utility {
     }
 
     public void selectMaleGenderRadioButton() {
-        waitUntilElementToBeClickable(maleGenderRadioBtn,20);
+        waitUntilPresenceOfElementLocated(maleGenderRadioBtn, 20);
+//        waitUntilElementToBeClickable(maleGenderRadioBtn,20);
         radioButtonClick(maleGenderRadioBtn);
     }
 
     public void selectFemaleGenderRadioButton() {
-        waitUntilElementToBeClickable(firstNameField,20);
+        waitUntilPresenceOfElementLocated(firstNameField, 20);
+//        waitUntilElementToBeClickable(firstNameField, 20);
         radioButtonClick(femaleGenderRadioBtn);
     }
 
     public void sendTextToFirstNameField(String str) {
-        waitUntilElementToBeClickable(firstNameField,20);
+        waitUntilPresenceOfElementLocated(firstNameField, 20);
+//        waitUntilElementToBeClickable(firstNameField, 20);
         sendTextToElement(firstNameField, str);
     }
 
     public void sendTextToLastNameField(String str) {
-        waitUntilElementToBeClickable(lastNameField,20);
+        waitUntilPresenceOfElementLocated(lastNameField, 20);
+//        waitUntilElementToBeClickable(lastNameField, 20);
         sendTextToElement(lastNameField, str);
     }
 
@@ -59,12 +63,13 @@ public class RegisterPage extends Utility {
     }
 
     public void sendTextToEmailField(String str) {
-    //    waitUntilElementToBeClickable(emailField,20);
+        //    waitUntilElementToBeClickable(emailField,20);
         sendTextToElement(emailField, str);
     }
 
     public void sendTextToCompanyField(String str) {
-        waitUntilElementToBeClickable(companyNameField,20);
+        waitUntilPresenceOfElementLocated(companyNameField, 20);
+//        waitUntilElementToBeClickable(companyNameField, 20);
         sendTextToElement(companyNameField, str);
     }
 
@@ -73,12 +78,12 @@ public class RegisterPage extends Utility {
     }
 
     public void sendTextToPasswordField(String str) {
-        waitUntilElementToBeClickable(passwordField,20);
+        waitUntilElementToBeClickable(passwordField, 20);
         sendTextToElement(passwordField, str);
     }
 
     public void sendTextToConfirmPasswordField(String str) {
-        waitUntilElementToBeClickable(confirmPasswordField,20);
+        waitUntilElementToBeClickable(confirmPasswordField, 20);
         sendTextToElement(confirmPasswordField, str);
     }
 

@@ -40,10 +40,10 @@ public class LoginTestCase extends TestBase {
     public void userShouldLoginSuccessfully() throws InterruptedException {
         //click Login link on HomePage
         homePage.clickOnLoginLink();
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         //send text to email field on LoginPage same email as used for registration
         loginPage.sendTextToEmailField(email);
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         //send text to password field on LoginPage
         loginPage.sendTextToPasswordField(password);
 
